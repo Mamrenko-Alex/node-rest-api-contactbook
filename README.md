@@ -99,6 +99,7 @@ To run the project, use one of the following commands:
 ## Contact
 
 If you have any questions, please contact me at:
-[Email](mamrenko.dev@gmail.com)
-[LinkedIn](https://www.linkedin.com/in/oleksandr-mamrenko-ab845426b/)
-[Telegram](@mamrenko_dev)
+
+- [LinkedIn](https://www.linkedin.com/in/oleksandr-mamrenko-ab845426b/)
+- Email - mamrenko.dev@gmail.com
+- Telegram - @mamrenko_dev
