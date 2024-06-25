@@ -96,20 +96,9 @@ To run the project, use one of the following commands:
 - `GET /users` - Get all users (admin route)
 - `POST /users/verify` - Verify user email
 
-## Contributing
-
-If you want to contribute to the project, please follow these instructions:
-
-1. Fork this repository
-2. Create your feature branch (`git checkout -b feature/amazing_feature`)
-3. Commit your changes (`git commit -m 'Add some amazing_feature'`)
-4. Push to the branch (`git push origin feature/amazing_feature`)
-5. Open a pull request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Contact
 
-If you have any questions, please contact us at: [your_email@example.com](mailto:your_email@example.com)
+If you have any questions, please contact me at:
+[Email](mamrenko.dev@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/oleksandr-mamrenko-ab845426b/)
+[Telegram](@mamrenko_dev)
