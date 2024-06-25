@@ -1,6 +1,6 @@
 # ContactBook
 
-ContactBook is a web application that allows users to add, edit, and delete contacts through an API interface. Additionally, it supports adding images to contacts.
+ContactBook is a web application that allows users to add, edit, and delete contacts through an API interface. Additionally, it supports adding images to contacts and email verification.
 
 ## Description
 
@@ -10,6 +10,7 @@ ContactBook offers the following features:
 - Deleting contacts
 - Adding contacts to favorites
 - Adding images to contacts
+- Email verification for user accounts
 
 ## Technologies
 
@@ -17,6 +18,7 @@ The project is built using the following technologies:
 - MongoDB
 - Node.js
 - Express
+- Nodemailer
 
 ## Installation
 
@@ -40,12 +42,15 @@ To install and run the project, follow these steps:
     npm install
     ```
 
-4. Create a `.env` file in the root directory of the project and add your environment variables (e.g., MongoDB URI, JWT secret key, etc.).
+4. Create a `.env` file in the root directory of the project and add your environment variables:
 
-    ```sh
-    JWT_SECRET=
-    PORT=
-    DB_HOST=
+    ```plaintext
+    JWT_SECRET=your_jwt_secret
+    PORT=your_port
+    UKRNET_EMAIL_FROM=your_ukrnet_email
+    UKRNET_EMAIL_PASSWORD=your_ukrnet_email_password
+    HOST_URL=your_host_url
+    DB_HOST=your_mongodb_uri
     ```
 
 ## Usage
@@ -62,6 +67,12 @@ To run the project, use one of the following commands:
 
     ```sh
     npm start
+    ```
+
+- To run tests:
+
+    ```sh
+    npm test
     ```
 
 ## API Routes
@@ -83,6 +94,7 @@ To run the project, use one of the following commands:
 - `GET /users/current` - Get current user information (requires token)
 - `PATCH /users` - Change user subscription (requires token)
 - `GET /users` - Get all users (admin route)
+- `POST /users/verify` - Verify user email
 
 ## Contributing
 
