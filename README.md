@@ -1,1 +1,103 @@
-# goit-node-rest-api
+# ContactBook
+
+ContactBook is a web application that allows users to add, edit, and delete contacts through an API interface. Additionally, it supports adding images to contacts.
+
+## Description
+
+ContactBook offers the following features:
+- Adding new contacts
+- Editing existing contacts
+- Deleting contacts
+- Adding contacts to favorites
+- Adding images to contacts
+
+## Technologies
+
+The project is built using the following technologies:
+- MongoDB
+- Node.js
+- Express
+
+## Installation
+
+To install and run the project, follow these steps:
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/your_username/ContactBook.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```sh
+    cd ContactBook
+    ```
+
+3. Install the dependencies:
+
+    ```sh
+    npm install
+    ```
+
+4. Create a `.env` file in the root directory of the project and add your environment variables (e.g., MongoDB URI, JWT secret key, etc.).
+
+    ```sh
+    JWT_SECRET=
+    PORT=
+    DB_HOST=
+    ```
+
+## Usage
+
+To run the project, use one of the following commands:
+
+- To run in development mode with automatic server restarts on file changes:
+
+    ```sh
+    npm run dev
+    ```
+
+- To run in normal mode:
+
+    ```sh
+    npm start
+    ```
+
+## API Routes
+
+### Contacts
+
+- `GET /contacts` - Get all contacts (requires token)
+- `GET /contacts/:id` - Get contact by ID (requires token)
+- `POST /contacts` - Create a new contact (requires token)
+- `PUT /contacts/:id` - Update contact by ID (requires token)
+- `DELETE /contacts/:id` - Delete contact by ID (requires token)
+- `PATCH /contacts/:id/favorite` - Add/remove contact from favorites (requires token)
+
+### Users
+
+- `POST /users/register` - Register a new user
+- `POST /users/login` - User login
+- `POST /users/logout` - User logout (requires token)
+- `GET /users/current` - Get current user information (requires token)
+- `PATCH /users` - Change user subscription (requires token)
+- `GET /users` - Get all users (admin route)
+
+## Contributing
+
+If you want to contribute to the project, please follow these instructions:
+
+1. Fork this repository
+2. Create your feature branch (`git checkout -b feature/amazing_feature`)
+3. Commit your changes (`git commit -m 'Add some amazing_feature'`)
+4. Push to the branch (`git push origin feature/amazing_feature`)
+5. Open a pull request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+If you have any questions, please contact us at: [your_email@example.com](mailto:your_email@example.com)
